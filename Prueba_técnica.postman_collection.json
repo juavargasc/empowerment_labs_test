@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "b2d141bf-c9e0-4a43-8beb-346594b38a8f",
+		"name": "Prueba_técnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "recommendation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/recommendation/data?type_search=todo&characteristics=Entrega_a_domicilio&foods=Desayuno&price=Gama_media&type_food=Sudamericana&content=Ceviche&food_restrictions=Apto_para_vegetarianos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recommendation",
+						"data"
+					],
+					"query": [
+						{
+							"key": "type_search",
+							"value": "todo"
+						},
+						{
+							"key": "characteristics",
+							"value": "Entrega_a_domicilio"
+						},
+						{
+							"key": "foods",
+							"value": "Desayuno"
+						},
+						{
+							"key": "price",
+							"value": "Gama_media"
+						},
+						{
+							"key": "type_food",
+							"value": "Sudamericana"
+						},
+						{
+							"key": "content",
+							"value": "Ceviche"
+						},
+						{
+							"key": "food_restrictions",
+							"value": "Apto_para_vegetarianos"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "recommendation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/recommendation/data?type_search=todo&characteristics=Entrega_a_domicilio&foods=Desayuno&price=Gama_media&type_food=Sudamericana&content=Ceviche&food_restrictions=Apto_para_vegetarianos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"recommendation",
+								"data"
+							],
+							"query": [
+								{
+									"key": "type_search",
+									"value": "todo"
+								},
+								{
+									"key": "characteristics",
+									"value": "Entrega_a_domicilio"
+								},
+								{
+									"key": "foods",
+									"value": "Desayuno"
+								},
+								{
+									"key": "price",
+									"value": "Gama_media"
+								},
+								{
+									"key": "type_food",
+									"value": "Sudamericana"
+								},
+								{
+									"key": "content",
+									"value": "Ceviche"
+								},
+								{
+									"key": "food_restrictions",
+									"value": "Apto_para_vegetarianos"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4754"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1292-OIchpfNn+EdhvqowP09HFPw05SU\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 16 May 2023 08:20:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Resultados de la busqueda\",\n    \"coincidence\": [\n        {\n            \"createdAt\": \"2012-08-24T00:53:10.349Z\",\n            \"id\": \"6462d4d46513108f513fbb74\",\n            \"name\": \"dolor anim dolor\",\n            \"tags\": \"Gama media|Alitas de pollo|Desayuno|Ceviche\",\n            \"type\": \"restaurante\",\n            \"total\": 3\n        },\n        {\n            \"createdAt\": \"2013-12-18T17:48:44.333Z\",\n            \"id\": \"6462d4d40531da2beee92d35\",\n            \"name\": \"reprehenderit ex non\",\n            \"tags\": \"Comida para llevar|Caribeña|Berenjenas|Desayuno|Entrega a domicilio\",\n            \"type\": \"restaurante\",\n            \"total\": 2\n        },\n        {\n            \"createdAt\": \"2011-03-24T21:53:10.641Z\",\n            \"id\": \"6462d4d4c3dbffcd61911f6e\",\n            \"name\": \"consectetur tempor deserunt\",\n            \"tags\": \"Ceviche|Mariscos|Berenjenas|Sudamericana|Opciones veganas\",\n            \"type\": \"restaurante\",\n            \"total\": 2\n        },\n        {\n            \"createdAt\": \"2014-03-04T10:30:45.558Z\",\n            \"id\": \"6462d4d4b5f2a4f22a9ceb77\",\n            \"name\": \"lorem ullamco nulla\",\n            \"tags\": \"Almejas|Ensalada|Sudamericana|Brunch|Ceviche\",\n            \"type\": \"receta\",\n            \"total\": 2\n        },\n        {\n            \"createdAt\": \"2010-09-28T13:07:06.463Z\",\n            \"id\": \"6462d4d42181617671fba02f\",\n            \"name\": \"sint ex aliquip\",\n            \"tags\": \"Gama media|Ensalada|Desayuno|Almejas|Opciones veganas\",\n            \"type\": \"restaurante\",\n            \"total\": 2\n        },\n        {\n            \"createdAt\": \"2010-10-01T21:47:00.829Z\",\n            \"id\": \"6462d4d4dc4cddc18433f436\",\n            \"name\": \"proident proident labore\",\n            \"tags\": \"Cena|Ceviche|Gama media|Económicos|Berenjenas\",\n            \"type\": \"restaurante\",\n            \"total\": 2\n        },\n        {\n            \"createdAt\": \"2014-09-04T20:17:00.414Z\",\n            \"id\": \"6462d4d44dc9b44171e867e3\",\n            \"name\": \"commodo ipsum amet\",\n            \"tags\": \"Gama media|Ensalada|Entrega a domicilio|Pescado|Almuerzo\",\n            \"type\": \"receta\",\n            \"total\": 2\n        },\n        {\n            \"createdAt\": \"2012-03-09T18:16:17.680Z\",\n            \"id\": \"6462d4d4c0937a7652ee32d8\",\n            \"name\": \"ad consectetur velit\",\n            \"tags\": \"Entrega a domicilio|Gama media|Atún|Cena|Pescado\",\n            \"type\": \"receta\",\n            \"total\": 2\n        },\n        {\n            \"createdAt\": \"2011-03-16T21:46:28.551Z\",\n            \"id\": \"6462d4d49912b9bffc5cd3c4\",\n            \"name\": \"mollit ullamco dolor\",\n            \"tags\": \"Brunch|Sudamericana|Camarones|Atún\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2010-04-20T15:27:20.455Z\",\n            \"id\": \"6462d4d4b6af649b6434db6d\",\n            \"name\": \"ut cupidatat laboris\",\n            \"tags\": \"Alitas de pollo|Mariscos|Gama media|Albóndigas|Caribeña\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2010-12-12T17:57:38.220Z\",\n            \"id\": \"6462d4d4e0805c3d6dc2d445\",\n            \"name\": \"aliquip ullamco laborum\",\n            \"tags\": \"Brunch|Sudamericana|Opciones sin gluten|Mariscos|Comida para llevar\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2010-09-14T03:05:44.012Z\",\n            \"id\": \"6462d4d47249e9f10ff652e0\",\n            \"name\": \"ea deserunt aute\",\n            \"tags\": \"alta cocina|Sudamericana|Alitas de pollo|Opciones veganas|Económicos\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2013-01-23T04:52:05.677Z\",\n            \"id\": \"6462d4d4efd58235b8240e81\",\n            \"name\": \"dolore dolor consectetur\",\n            \"tags\": \"Almuerzo|Camarones|Berenjenas|Desayuno|Caribeña\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2012-10-28T13:39:11.119Z\",\n            \"id\": \"6462d4d40bc18588dc1dd4c1\",\n            \"name\": \"id aliquip ut\",\n            \"tags\": \"alta cocina|Berenjenas|Ceviche|Caribeña\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2014-11-02T23:09:38.980Z\",\n            \"id\": \"6462d4d422aa902eddabd937\",\n            \"name\": \"mollit ipsum reprehenderit\",\n            \"tags\": \"Alitas de pollo|Camarones|Entrega a domicilio\",\n            \"type\": \"receta\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2010-11-27T19:01:48.129Z\",\n            \"id\": \"6462d4d4d5a02f62136d8962\",\n            \"name\": \"proident tempor nulla\",\n            \"tags\": \"alta cocina|Atún|Camarones|Ceviche\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2012-09-07T16:21:05.115Z\",\n            \"id\": \"6462d4d44dfc1587ba6c4137\",\n            \"name\": \"ea veniam aliqua\",\n            \"tags\": \"Caribeña|Económicos|Apto para vegetarianos|Atún|Camarones\",\n            \"type\": \"receta\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2012-04-02T13:40:06.240Z\",\n            \"id\": \"6462d4d4cd40de4e2d363db9\",\n            \"name\": \"adipisicing tempor laborum\",\n            \"tags\": \"Entrega a domicilio|Camarones|Albóndigas|Almejas|Opciones sin gluten\",\n            \"type\": \"receta\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2010-01-25T12:16:56.230Z\",\n            \"id\": \"6462d4d4f98ab6c288429f28\",\n            \"name\": \"do proident sint\",\n            \"tags\": \"Desayuno|Almejas|Camarones\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2011-07-07T06:46:01.511Z\",\n            \"id\": \"6462d4d48f22c85c006f3621\",\n            \"name\": \"labore sunt non\",\n            \"tags\": \"Berenjenas|Comida para llevar|Almuerzo|Entrega a domicilio|Mariscos\",\n            \"type\": \"receta\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2013-01-11T06:00:31.538Z\",\n            \"id\": \"6462d4d4ad5b50641d8c7ddf\",\n            \"name\": \"incididunt eiusmod in\",\n            \"tags\": \"Almejas|Opciones sin gluten|Entrega a domicilio|Atún|Berenjenas\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2014-06-26T16:20:08.694Z\",\n            \"id\": \"6462d4d41d3f4abd33b1340f\",\n            \"name\": \"id enim reprehenderit\",\n            \"tags\": \"Alitas de pollo|Entrega a domicilio|Opciones veganas|Latina\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2014-03-11T10:53:02.542Z\",\n            \"id\": \"6462d4d478f468ba18d01fb1\",\n            \"name\": \"labore et ut\",\n            \"tags\": \"Camarones|Servicio de mesa|Pescado|Apto para vegetarianos|Cena\",\n            \"type\": \"restaurante\",\n            \"total\": 1\n        },\n        {\n            \"createdAt\": \"2011-02-18T22:27:49.905Z\",\n            \"id\": \"6462d4d40ee69fa7b3a34e9e\",\n            \"name\": \"officia et minim\",\n            \"tags\": \"Gama media|Económicos|Almejas|Comida para llevar|Berenjenas\",\n            \"type\": \"receta\",\n            \"total\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "seedDb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/recommendation/seedDb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recommendation",
+						"seedDb"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "seedDb",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/recommendation/seedDb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"recommendation",
+								"seedDb"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6-LM5KkvQf49VacsJ7kiwJO90KQmc\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 16 May 2023 08:21:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "finish"
+				}
+			]
+		}
+	]
+}

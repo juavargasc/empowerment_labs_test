@@ -1,0 +1,47 @@
+service: food-recommendation
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-plugin-optimize
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+package:
+  individually: true
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+  environment:
+    STAGE_DEPLOY: ${sls:stage}
+    ACCESS_KEY_ID: ${env:ACCESS_KEY_ID}
+    SECRET_ACCESS_KEY: ${env:SECRET_ACCESS_KEY}
+    REGION: ${env:REGION}
+    TABLE: ${env:TABLE}
+
+functions:
+  main:
+    handler: src/lambda.handler
+    timeout: 29
+    events:
+      - http: ANY /
+        cors: true
+      - http: ANY /{proxy+}
+        cors: true
+      - http:
+          cors: true
+          method: get
+          path: /recommendation/seedDb
+      - http:
+          cors: true
+          method: get
+          path: /recommendation/data
+
+resources:
+  # DynamoDB
+  - ${file(aws-resources/dynamodb.yml)}
