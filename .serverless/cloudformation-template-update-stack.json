@@ -162,7 +162,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/food-recommendation/prod/1684338603437-2023-05-17T15:50:03.437Z/main.zip"
+          "S3Key": "serverless/food-recommendation/prod/1684345326615-2023-05-17T17:42:06.615Z/main.zip"
         },
         "Handler": "_optimize/food-recommendation-prod-main/src/lambda.handler",
         "Runtime": "nodejs14.x",
@@ -542,7 +542,7 @@
         "MainLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1684338566709": {
+    "ApiGatewayDeployment1684345291829": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
