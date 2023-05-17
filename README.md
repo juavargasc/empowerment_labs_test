@@ -110,6 +110,7 @@ La respuesta del servicio esta basada en en el mayor numero de coincidencias obt
 - DynamoDB, para la persistencia de datos y agildiad de las consultas.
 - El proyecto se puede ejecutar en local directametne con nest o a través de docker
 - Se usa NodeJS 14 o superior.
+- Se implementa Sonarcloud para revisión de codigo desde github
 
 ## License
 
